@@ -218,15 +218,16 @@
 .brandlist ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .brandlist ul li{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .brandlist ul li img{
-  max-width: 80%;
+  max-width: 100%;
 }
 
 @media screen and (min-width:768px){
