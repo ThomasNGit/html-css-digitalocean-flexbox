@@ -1,0 +1,375 @@
+/* regole generali di pagina */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* parte navbar superiore */
+
+.navcontainer{
+  padding: 15px;
+}
+
+.new span{
+  font-size: 16px;
+  padding: 5px;
+  background-color: #00D7D2;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.new a{
+  color: #6E7B95;
+}
+
+.new a:hover{
+  text-decoration: none;
+  color: #0069FF;
+}
+
+.navlist li{
+  display: inline-block;
+}
+
+.navlist li a{
+  color: #6E7B95;
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.navlist li a:hover{
+  text-decoration: none;
+}
+
+/* parte navbar inferiore */
+.nav-logo{
+  width: 90%;
+  padding: 10px;
+}
+
+.navlist-2 li {
+  display: inline-block;
+}
+
+.navlist-2 li a{
+  color: #031B4E;
+  font-size: 18px;
+  padding-right: 5px;
+  line-height: 75px;
+}
+.signup{
+  padding-top: 20px;
+}
+
+.sign-up{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0069FF;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.sign-up:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #0069FF;
+}
+
+
+.img-bg{
+  background-image: url("../img/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* parte testuale sinistra */
+.title{
+  text-align: center;
+  padding-top: 200px;
+  padding-left: 100px;
+}
+
+.title h2{
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.title p{
+  color: #96B4FF;
+  font-size: 22px;
+}
+
+/* parte del form destra */
+
+.formspace{
+  width: 60%;
+  margin: 10% auto;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.formspace h3{
+  text-align: center;
+  padding: 30px 0;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.formspace form input{
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+  line-height: 55px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.formlink{
+  width: 80%;
+  background-color: #0069FF;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.formlink a{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.formlink:hover{
+  cursor: pointer;
+  background-color: purple;
+}
+
+.formlink a{
+  text-decoration: none;
+}
+
+.formlink a:visited{
+  text-decoration: none;
+}
+
+.formspace p{
+  text-align: center;
+}
+
+/* sezioni link  */
+.linkcontainer{
+  margin: 5% 10%;
+  width: 100%;
+}
+
+.linkcontainer ul li{
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+
+.linkcontainer ul li a{
+  font-size: 18px;
+  font-weight: bold;
+  color:#000;
+  padding: 10px;
+  background-color: #F2F8FF;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.linkcontainer ul li a:hover{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* stile sezione immagini affiancate */
+
+.grey-bg{
+  background-color: #F3F5F9;
+}
+
+.brand h4{
+  text-align: center;
+  color: #ABB6BD;
+  padding-top: 50px;
+}
+
+/* .brandlist{
+  width: 60%;
+  margin: 5% 20%;
+}
+
+
+.brandlist ul li{
+  display: inline-block;
+
+}
+
+.brandlist ul li img{
+  height: 100px;
+  width: calc((100 / 6) * 1);
+  padding: 10px;
+} */
+
+.brandlist ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brandlist ul li{
+  display: flex;
+  align-items: center;
+}
+
+.brandlist ul li img{
+  max-width: 80%;
+}
+
+@media screen and (min-width:768px){
+    .brandlist ul li {
+    width: calc((100 / 6) - 4px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .brandlist ul li{
+    max-width: 50%;
+  }
+}
+
+.blues a{
+  font-size: 30px;
+}
+
+/* sezione built for business */
+.built{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.vantaggi{
+  padding: 30px;
+  margin-bottom: 15%;
+}
+
+.vantaggi h3{
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.vantaggi p{
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.vantaggi a{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* sezione tabelle */
+
+.table-bg{
+  background-image: url("../img/data-center-map.svg");
+  background-color: #031B4E;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.service{
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+table{
+  margin-top: 10%;
+}
+
+
+table a{
+  color: #00D7CE;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tablecontainer{
+  margin-bottom: 5%;
+}
+
+/* sezione get started */
+
+.get-started{
+  color:  #fff;
+  font-size: 35px;
+  padding-top: 20px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.create{
+  text-align: center;
+  margin-bottom: 50px;;
+}
+
+.create a{
+    color: #0049FF;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.create a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* footer */
+
+.footer-bg{
+  background-color: #031B4E;
+}
+
+
+.listcontainer{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footerlist{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.footerlist li{
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.footerlist li a{
+  color: #808794;
+}
+
+.footerlist li a:hover{
+  color:#fff;
+  text-decoration: none;
+}
+
+/* clearfix */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
